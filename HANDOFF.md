@@ -3,8 +3,13 @@
 **Sidst:** 2026-06-30 · Cursor
 
 - Oprettet `index.html` med samme tekst som https://jensensbogforing.dk/
-- Simpel én-sides layout (selvstændig HTML + indlejret CSS)
+- GitHub-repo + gratis GitHub Pages aktiveret
+- Komplet site: index, jeg-tilbyder, om-mig, priser (samme tekst som org.)
+- Eget moderne design (grøn/guld) + billeder fra jensensbogforing.dk
 
-**Næste skridt:** Åbn `index.html` i browser og tjek at teksten ser rigtig ud.
+**Live:** https://nordictester.github.io/jensens-bogforing/  
+**Repo:** https://github.com/Nordictester/jensens-bogforing
 
-**Vigtige filer:** `index.html`
+**Næste skridt:** Tjek live-siden i browser (kan tage 1–2 min første gang).
+
+**Vigtige filer:** `index.html`, `README.md`
