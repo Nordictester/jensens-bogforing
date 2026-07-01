@@ -1,15 +1,14 @@
 # HANDOFF — Jensens Bogføring
 
-**Sidst:** 2026-06-30 · Cursor
+**Sidst:** 2026-07-01 · Cursor
 
-- Oprettet `index.html` med samme tekst som https://jensensbogforing.dk/
-- GitHub-repo + gratis GitHub Pages aktiveret
-- Komplet site: index, jeg-tilbyder, om-mig, priser (samme tekst som org.)
-- Eget moderne design (grøn/guld) + billeder fra jensensbogforing.dk
+- Kort i footer flyttet lige under «Søndermarken 23»
+- Fjernet ødelagt favicon-billede i header (alle sider)
+- GitHub Pages live
 
 **Live:** https://nordictester.github.io/jensens-bogforing/  
 **Repo:** https://github.com/Nordictester/jensens-bogforing
 
-**Næste skridt:** Tjek live-siden i browser (kan tage 1–2 min første gang).
+**Næste skridt:** Genindlæs siden og tjek footer-layout.
 
 **Vigtige filer:** `index.html`, `README.md`
