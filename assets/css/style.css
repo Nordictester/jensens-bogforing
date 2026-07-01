@@ -368,6 +368,10 @@ main {
   color: var(--ink);
 }
 
+.timeline .closing-note {
+  margin-top: 0;
+}
+
 /* Prices */
 .price-cards {
   display: grid;
