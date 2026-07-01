@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin – Priser | Jensens Bogføring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="admin-page">
+    <div class="container">
+      <section id="login-screen" class="admin-panel admin-login">
+        <p class="admin-back"><a href="index.html">&larr; Tilbage til forsiden</a></p>
+        <h1 class="page-title">Log ind</h1>
+        <form id="login-form" class="admin-form">
+          <label>
+            Kode
+            <input type="password" id="admin-code" autocomplete="current-password" required />
+          </label>
+          <button type="submit" class="btn">Log ind</button>
+        </form>
+        <p id="login-error" class="admin-status error" role="alert" aria-live="polite"></p>
+      </section>
+
+      <div id="admin-content" hidden>
+        <p class="admin-back"><a href="priser.html">&larr; Tilbage til priser</a></p>
+        <h1 class="page-title">Rediger priser</h1>
+
+        <div class="admin-panel">
+          <h2>1. GitHub-forbindelse</h2>
+          <p>Du skal bruge en personlig GitHub-nøgle én gang. Den gemmes kun i din browser.</p>
+          <form id="token-form" class="admin-form">
+            <label>
+              GitHub-nøgle
+              <input type="password" id="github-token" autocomplete="off" placeholder="ghp_… eller github_pat_…" />
+            </label>
+            <div class="admin-actions">
+              <button type="submit" class="btn">Gem nøgle</button>
+              <button type="button" class="btn btn-ghost" id="forget-token">Slet nøgle</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="admin-panel">
+          <h2>2. Priser</h2>
+          <form id="prices-form" class="admin-form">
+            <label>
+              Timepris (kr. uden moms)
+              <input type="number" id="price-hourly-input" min="1" step="1" value="325" required />
+            </label>
+            <label>
+              Kørsel (kr. pr. km uden moms)
+              <input type="number" id="price-mileage-input" min="0.01" step="0.01" value="3.25" required />
+            </label>
+            <button type="submit" class="btn">Gem priser på hjemmesiden</button>
+          </form>
+          <p id="admin-status" class="admin-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <details class="admin-help">
+          <summary>Sådan opretter du en GitHub-nøgle</summary>
+          <ol>
+            <li>Log ind på <a href="https://github.com" target="_blank" rel="noopener">github.com</a>.</li>
+            <li>Gå til <strong>Settings → Developer settings → Personal access tokens</strong>.</li>
+            <li>Opret en <strong>fine-grained token</strong> med adgang til repoet <code>jensens-bogforing</code>.</li>
+            <li>Giv tilladelsen <strong>Contents: Read and write</strong>.</li>
+            <li>Kopiér nøglen og indsæt den ovenfor.</li>
+          </ol>
+          <p>Efter gem tager GitHub Pages typisk 1–2 minutter om at vise de nye priser.</p>
+        </details>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

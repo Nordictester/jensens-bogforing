@@ -239,6 +239,68 @@ main {
   color: var(--muted);
 }
 
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 48px rgba(26, 46, 42, 0.12);
+  text-decoration: none;
+}
+
+.card-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-light);
+}
+
+/* Service subpages */
+.service-detail {
+  max-width: 42rem;
+}
+
+.back-link {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.service-content {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.service-content p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.service-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.service-content ul {
+  margin: 0 0 1rem 1.25rem;
+  color: var(--muted);
+}
+
+.service-content li {
+  margin-bottom: 0.4rem;
+}
+
+.service-content li:last-child {
+  margin-bottom: 0;
+}
+
 /* Timeline */
 .about-layout {
   display: grid;
@@ -412,7 +474,11 @@ main {
 }
 
 .footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
   padding: 2.5rem 0 2rem;
+  align-items: start;
 }
 
 .footer-contact h2 {
@@ -431,8 +497,6 @@ main {
 }
 
 .map-wrap {
-  margin: 0.75rem 0 1.25rem;
-  max-width: 480px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -446,11 +510,33 @@ main {
 }
 
 .footer-bottom {
+  position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 1rem 0;
+  padding: 1rem 4.5rem 1rem 1rem;
   text-align: center;
   font-size: 0.85rem;
-  opacity: 0.7;
+  opacity: 0.85;
+}
+
+.footer-admin-link {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.footer-admin-link:hover,
+.footer-admin-link:focus {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* Mobile */
@@ -480,7 +566,8 @@ main {
   }
 
   .split,
-  .about-layout {
+  .about-layout,
+  .footer-inner {
     grid-template-columns: 1fr;
   }
 
@@ -492,4 +579,108 @@ main {
     max-width: 280px;
     margin: 0 auto;
   }
+}
+
+/* Admin */
+.admin-page {
+  padding: 3rem 0 4rem;
+}
+
+.admin-login {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.admin-back {
+  margin-bottom: 1rem;
+}
+
+.admin-lead {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.admin-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.admin-panel h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--brand);
+}
+
+.admin-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.admin-form input {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--brand);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover {
+  background: var(--surface);
+}
+
+.admin-status {
+  margin-top: 1rem;
+  min-height: 1.25rem;
+}
+
+.admin-status.ok {
+  color: var(--brand-light);
+  font-weight: 600;
+}
+
+.admin-status.error {
+  color: #b42318;
+  font-weight: 600;
+}
+
+.admin-help {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.admin-help summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.admin-help ol {
+  margin: 1rem 0 0 1.25rem;
+}
+
+.admin-help li {
+  margin-bottom: 0.5rem;
 }

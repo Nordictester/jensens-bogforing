@@ -2,13 +2,14 @@
 
 **Sidst:** 2026-07-01 · Cursor
 
-- Kort i footer flyttet lige under «Søndermarken 23»
-- Fjernet ødelagt favicon-billede i header (alle sider)
-- GitHub Pages live
+- Undersider til "Jeg tilbyder" i `tilbud/` (6 stk.) med korte, præcise tekster
+- Backup af gammel side i `_snapshot/2026-07-01-jeg-tilbyder/`
+- Kort på oversigten linker til undersider med "Læs mere"
 
 **Live:** https://nordictester.github.io/jensens-bogforing/  
+**Admin:** https://nordictester.github.io/jensens-bogforing/admin.html  
 **Repo:** https://github.com/Nordictester/jensens-bogforing
 
-**Næste skridt:** Genindlæs siden og tjek footer-layout.
+**Næste skridt:** Gennemse teksterne med Berit — push til GitHub når godkendt.
 
-**Vigtige filer:** `index.html`, `README.md`
+**Vigtige filer:** `jeg-tilbyder.html`, `tilbud/*.html`, `_snapshot/2026-07-01-jeg-tilbyder/`

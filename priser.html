@@ -39,12 +39,12 @@
         <div class="price-cards">
           <div class="price-card">
             <p>Timepris</p>
-            <div class="amount">Kr. 325,-</div>
+            <div class="amount" id="price-hourly">Kr. 325,-</div>
             <p>+ moms pr. time</p>
           </div>
           <div class="price-card">
             <p>Kørsel</p>
-            <div class="amount">Kr. 3,25</div>
+            <div class="amount" id="price-mileage">Kr. 3,25</div>
             <p>+ moms pr. km</p>
           </div>
         </div>
@@ -76,17 +76,21 @@
       <div class="footer-contact">
         <h2>Jensens Bogføring</h2>
         <h2>Søndermarken 23</h2>
-        <div class="map-wrap">
-          <iframe title="Kort over Jensens Bogføring" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.755192904033!2d9.665286084613216!3d56.3685559139625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bf8293d55d49d%3A0x594dfc778835ecf9!2sS%C3%B8ndermarken%2023%2C%208850%20Bjerringbro!5e0!3m2!1sda!2sdk!4v1530386312200" allowfullscreen></iframe>
-        </div>
         <h2>8850 Bjerringbro</h2>
         <h2>Tlf.: <a href="tel:+4522875573">22 87 55 73</a></h2>
         <h2>E-mail: <a href="mailto:info@jbbj.dk">info@jbbj.dk</a></h2>
         <h2>CVR: 30 33 48 96</h2>
       </div>
+      <div class="map-wrap">
+        <iframe title="Kort over Jensens Bogføring" src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sS%C3%B8ndermarken+23,+8850+Bjerringbro,+Denmark!6i16!3m1!1sda!5m1!1sda" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-    <div class="footer-bottom container">&copy; Jensens Bogføring</div>
+    <div class="footer-bottom container">
+      <span>&copy; Jensens Bogføring</span>
+      <a href="admin.html" class="footer-admin-link">Admin</a>
+    </div>
   </footer>
+  <script src="assets/js/prices.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
