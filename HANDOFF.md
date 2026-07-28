@@ -2,7 +2,7 @@
 
 **Sidst:** 2026-07-28 · Cursor
 
-- **Berit-billede (Om mig):** Live `jensensbogforing.dk` kører på **one.com** (DNS), ikke GitHub Pages. `assets/berit.jpg` manglede dér → 404. `om-mig.html` bruger igen one.com-CDN-URL til portrættet. Lokal `assets/berit.jpg` er samtidig komprimeret (~70 KB) til GitHub Pages/backup.
+- **Berit-billede (Om mig):** Billedet `onewebmedia/20180908_162855.jpg` er fint på one.com. Fejlen var at siden peget på `assets/berit.jpg` (findes ikke på one.com). `om-mig.html` peget nu på `onewebmedia/20180908_162855.jpg`. Lokal `assets/berit.jpg` er komprimeret backup.
 - Forside-hero: AI-GENERERET kontorbillede hvor skærmen viser det RIGTIGE kort → `assets/hero-generated3.png` = `assets/hero.png`
 - METODE (VIGTIGT, brugerens ønske): generér et NYT billede og giv AI'en det ægte Google Maps-screenshot (`assets/realmap.png` = Søndermarken 23) som forlæg/reference — IKKE manuelt indklistret/redigeret kort
 - Backups: `assets/hero-original.png` (oprindeligt foto), `assets/realmap.png` (ægte kort). `index.html` hero-bg → `assets/hero.png`
